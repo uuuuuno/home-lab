@@ -1,0 +1,8 @@
+version: '3'
+services:
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate run --token ${CF-TUNNEL-TOKEN}
+    restart: unless-stopped
+    deploy:
+      replicas: 3
