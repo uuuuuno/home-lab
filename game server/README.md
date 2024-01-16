@@ -1,9 +1,8 @@
 # Дата сервер
 
-Этот сервер предназначен для баз данных и их управления.
+Этот сервер предназначен для игровых серверов.
 
-- **budibase**: https://hub.docker.com/r/budibase/budibase
-- **mysql**: https://hub.docker.com/_/mysql
+- **minecraft**: https://hub.docker.com/r/itzg/minecraft-server
 
 ## Запуск
 

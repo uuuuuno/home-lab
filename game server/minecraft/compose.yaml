@@ -1,0 +1,18 @@
+services:
+  minecraft-server:
+    container_name: minecraft-test
+    image: itzg/minecraft-server
+    restart: unless-stopped
+    ports:
+      - "25565:25565"
+#      Если вы используете Plasmo Voice:
+#      - "25565:25565/udp"
+    volumes:
+      - ./minecraft-test:/data
+    environment:
+      EULA: TRUE
+      VERSION: 1.19.4
+      TYPE: PUFFERFISH
+      MEMORY: 4G
+#      Если вы используете Plasmo Voice:
+#      PLASMO_VOICE_FORWARDING_SECRET: ${MC_PLASMO_VOICE_FORWARDING_SECRET}

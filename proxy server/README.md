@@ -2,6 +2,9 @@
 
 В этом прокси-сервере я использовал [туннели от Cloudflare](https://www.cloudflare.com/products/tunnel/) для обеспечения безопасного доступа к моим сервисам. Также в репозитории присутствует [uptime-kuma](https://github.com/louislam/uptime-kuma) для отслеживания доступности сервисов.
 
+- **cloudflared**: https://hub.docker.com/r/cloudflare/cloudflared
+- **uptime-kuma**: https://hub.docker.com/r/louislam/uptime-kuma
+
 ## Запуск
 
 Для запуска контейнеров используется Docker Compose. Если в папке с проектом присутствует файл `.env.example`, необходимо переименовать его в `.env` и указать в нем свои переменные.
