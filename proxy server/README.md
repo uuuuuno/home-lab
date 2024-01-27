@@ -1,15 +1,15 @@
-# Прокси-сервер
+# Proxy Server
 
-В этом прокси-сервере я использовал [туннели от Cloudflare](https://www.cloudflare.com/products/tunnel/) для обеспечения безопасного доступа к моим сервисам. Также в репозитории присутствует [uptime-kuma](https://github.com/louislam/uptime-kuma) для отслеживания доступности сервисов.
+In this proxy server, I used [Cloudflare tunnels](https://www.cloudflare.com/products/tunnel/) to provide secure access to my services. The repository also includes [uptime-kuma](https://github.com/louislam/uptime-kuma) for monitoring the availability of services.
 
 - **cloudflared**: https://hub.docker.com/r/cloudflare/cloudflared
 - **uptime-kuma**: https://hub.docker.com/r/louislam/uptime-kuma
 
-## Запуск
+## Launch
 
-Для запуска контейнеров используется Docker Compose. Если в папке с проектом присутствует файл `.env.example`, необходимо переименовать его в `.env` и указать в нем свои переменные.
+Docker Compose is used to launch containers. If there is a `.env.example` file in the project folder, it should be renamed to `.env` and your variables should be specified in it.
 
 ```shell
-# Запуск
+# Launch
 docker compose up -d
 ```

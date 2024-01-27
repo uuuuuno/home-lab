@@ -1,15 +1,16 @@
-# Домашняя лаборатория
+# Home Laboratory
 
-В этом репозитории я открываю и делюсь конфигами, для настройки и управления некоторыми моими домашними серверами.
+In this repository, I open and share configs for setting up and managing some of my home servers.
 
-## Содержание репозитория
+## Repository Contents
 
-- **proxy server**: Прокси-сервер
-- **data server**: Развертывание и управление базами
-- **game server**: Игровые сервера
+- **proxy server**
+- **data server**
+- **game server**
+- **coordinator server**
 
-Каждая папка содержит подробную документацию и инструкции по настройке соответствующего сервера. Вы можете использовать этот код как основу для настройки своих собственных домашних серверов или просто изучить его, чтобы узнать больше о моих решениях и подходах.
+Each folder contains detailed documentation and instructions for setting up the respective server. You can use this code as a basis for setting up your own home servers or simply study it to learn more about my solutions and approaches.
 
-## Вклад
+## Contribution
 
-Вы можете вносить свои предложения и улучшения в этот репозиторий, создавая pull-запросы.
+You can contribute your suggestions and improvements to this repository by creating pull requests.

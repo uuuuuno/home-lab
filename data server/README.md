@@ -1,15 +1,15 @@
-# Дата сервер
+# Data Server
 
-Этот сервер предназначен для баз данных и их управления.
+This server is intended for databases and their management.
 
 - **budibase**: https://hub.docker.com/r/budibase/budibase
 - **mysql**: https://hub.docker.com/_/mysql
 
-## Запуск
+## Launch
 
-Для запуска контейнеров используется Docker Compose. Если в папке с проектом присутствует файл `.env.example`, необходимо переименовать его в `.env` и указать в нем свои переменные.
+Docker Compose is used to launch containers. If there is a `.env.example` file in the project folder, it should be renamed to `.env` and your variables should be specified in it.
 
 ```shell
-# Запуск
+# Launch
 docker compose up -d
 ```
