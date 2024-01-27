@@ -2,7 +2,7 @@
 
 Этот сервер предназначен для игровых серверов.
 
-- **minecraft**: https://hub.docker.com/r/itzg/minecraft-server
+- **minecraft**: https://github.com/uuuuuno/mc-server
 
 ## Запуск
 

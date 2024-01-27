@@ -1,18 +1,48 @@
 services:
-  minecraft-server:
-    container_name: minecraft-test
+# velocity
+  velocity: 
+    container_name: mc-velocity
+    image: itzg/bungeecord
+    restart: unless-stopped
+    networks:
+      - velocity
+    volumes: 
+      - ./mc-velocity:/server
+    ports:
+      - "25565:25577"
+    environment:
+      TYPE: VELOCITY 
+      MEMORY: 512M
+# lobby
+  lobby:
+    container_name: mc-lobby
     image: itzg/minecraft-server
     restart: unless-stopped
-    ports:
-      - "25565:25565"
-#      Если вы используете Plasmo Voice:
-#      - "25565:25565/udp"
+    networks:
+      - velocity
     volumes:
-      - ./minecraft-test:/data
+      - ./mc-lobby:/data
     environment:
       EULA: TRUE
-      VERSION: 1.19.4
-      TYPE: PUFFERFISH
-      MEMORY: 4G
-#      Если вы используете Plasmo Voice:
-#      PLASMO_VOICE_FORWARDING_SECRET: ${MC_PLASMO_VOICE_FORWARDING_SECRET}
+      VERSION: 1.20.1
+      TYPE: PAPER
+      MEMORY: 3G
+      ONLINE_MODE: FALSE
+# server 1
+  server1:
+    container_name: mc-server1
+    image: itzg/minecraft-server
+    restart: unless-stopped
+    networks:
+      - velocity
+    volumes:
+      - ./mc-server1:/data
+    environment:
+      EULA: TRUE
+      VERSION: 1.20.1
+      TYPE: PAPER
+      MEMORY: 3G
+      ONLINE_MODE: FALSE
+networks:
+  velocity:
+    name: velocity-network
